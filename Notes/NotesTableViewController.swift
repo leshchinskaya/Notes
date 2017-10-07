@@ -12,6 +12,8 @@ class NotesTableViewController: UITableViewController {
 
     var notes: [Note] = []
     
+    let imageView = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,12 @@ class NotesTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        imageView.frame = CGRect(x:0, y:0, width:UIScreen.main.bounds.width, height:400)
+        imageView.image = UIImage.init(named: "title.png")
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        view.addSubview(imageView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,6 +41,12 @@ class NotesTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let y = 300 - (scrollView.contentOffset.y + 300)
+        let height = min(max(y, 60), 600)
+        imageView.frame = CGRect(x:0, y:0, width:UIScreen.main.bounds.width, height:height)
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
