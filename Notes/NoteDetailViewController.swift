@@ -18,7 +18,7 @@ class NoteDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //navigationController?.navigationBar.prefersLargeTitles = false
         // Add a background view to the table view
         let backgroundImage = UIImage(named: "paper.jpg")
         //let imageViewBackground = UIImageView(image: backgroundImage)
@@ -29,7 +29,7 @@ class NoteDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        navigationController?.navigationBar.prefersLargeTitles = false
         //titleTextField.text = note.title
         //contentTextField.text = note.content
         contentTextView.text = note.content
@@ -37,7 +37,6 @@ class NoteDetailViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         //note.title = titleTextField.text!
         note.title = contentTextView.text!
         //note.content = contentTextField.text!

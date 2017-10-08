@@ -24,7 +24,7 @@ class NotesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.prefersLargeTitles = true
+        //navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,8 +47,9 @@ class NotesTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
         super.viewWillAppear(animated)
-        
+
         tableView.reloadData()
     }
     
