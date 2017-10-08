@@ -17,13 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0bK-jo-VrQ">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotesCell" textLabel="uAd-cm-2Pc" style="IBUITableViewCellStyleDefault" id="wB1-An-lhK">
-                                <rect key="frame" x="0.0" y="104" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wB1-An-lhK" id="4B1-Ac-UVu">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -48,7 +44,8 @@
                             <outlet property="delegate" destination="T7f-dV-Z18" id="UpY-dK-cHR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notes" id="SYB-rz-dWt">
+                    <navigationItem key="navigationItem" title="Notes" leftItemsSupplementBackButton="YES" id="SYB-rz-dWt">
+                        <barButtonItem key="backBarButtonItem" title="faster Notes" id="ars-5Y-Nop"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="B61-h7-fFT">
                             <connections>
                                 <segue destination="MTS-yo-uIy" kind="show" identifier="addNote" id="Pez-Ep-h79"/>
@@ -73,15 +70,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSG-Xz-prb">
-                                <rect key="frame" x="16" y="72" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Content" translatesAutoresizingMaskIntoConstraints="NO" id="j2s-pU-UTl">
-                                <rect key="frame" x="16" y="120" width="343" height="509"/>
+                                <rect key="frame" x="16" y="64" width="343" height="565"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -92,7 +82,6 @@
                     </view>
                     <connections>
                         <outlet property="contentTextView" destination="j2s-pU-UTl" id="sLw-zX-yy5"/>
-                        <outlet property="titleTextField" destination="MSG-Xz-prb" id="Dkd-SY-KuN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAP-zY-yoc" userLabel="First Responder" sceneMemberID="firstResponder"/>

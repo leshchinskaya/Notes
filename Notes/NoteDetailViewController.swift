@@ -10,7 +10,7 @@ import UIKit
 
 class NoteDetailViewController: UIViewController {
     
-    @IBOutlet weak var titleTextField: UITextField!
+    //@IBOutlet weak var titleTextField: UITextField!
     
     var note: Note!
     
@@ -20,7 +20,7 @@ class NoteDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        titleTextField.text = note.title
+        //titleTextField.text = note.title
         //contentTextField.text = note.content
         contentTextView.text = note.content
     }
@@ -28,7 +28,8 @@ class NoteDetailViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        note.title = titleTextField.text!
+        //note.title = titleTextField.text!
+        note.title = contentTextView.text!
         //note.content = contentTextField.text!
         note.content = contentTextView.text!
     }
