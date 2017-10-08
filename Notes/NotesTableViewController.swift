@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import Firebase
 
 class NotesTableViewController: UITableViewController {
 
@@ -23,6 +25,8 @@ class NotesTableViewController: UITableViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       // FIRDatabase.database().reference().setValue(85)
         
         //navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
