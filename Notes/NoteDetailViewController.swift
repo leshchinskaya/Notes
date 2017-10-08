@@ -18,12 +18,12 @@ class NoteDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
+        
         // Add a background view to the table view
         let backgroundImage = UIImage(named: "paper.jpg")
-        let imageViewBackground = UIImageView(image: backgroundImage)
-        self.contentTextView.addSubview(imageViewBackground)
-         */
+        //let imageViewBackground = UIImageView(image: backgroundImage)
+        self.contentTextView.backgroundColor = UIColor(patternImage: backgroundImage!)
+        
     }
     
     
