@@ -11,10 +11,16 @@ import UIKit
 class NotesTableViewController: UITableViewController {
 
     var notes: [Note] = []
+    var filteredNotes = [Note]()
     
     let searchController = UISearchController(searchResultsController: nil)
     let imageView = UIImageView()
     
+    func isFiltering() -> Bool {
+        //return searchController.isActive && !searchBarIsEmpty()
+        return false
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +39,11 @@ class NotesTableViewController: UITableViewController {
         imageView.clipsToBounds = true
         view.addSubview(imageView)
          */
+        
+        // Add a background view to the table view
+        let backgroundImage = UIImage(named: "paper.jpg")
+        let imageViewBackground = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageViewBackground
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,12 +72,23 @@ class NotesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if isFiltering() {
+            return filteredNotes.count
+        }
         return notes.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "NotesCell", for: indexPath) as UITableViewCell
+        let note: Note
+        
+        if isFiltering() {
+            note = filteredNotes[indexPath.row]
+        } else {
+            note = notes[indexPath.row]
+        }
+        
         
         cell.textLabel!.text = notes[indexPath.row].title
         
@@ -98,6 +120,9 @@ class NotesTableViewController: UITableViewController {
         tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.automatic)
     }
     
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 1, alpha: 0)
+    }
 
     /*
     // Override to support rearranging the table view.

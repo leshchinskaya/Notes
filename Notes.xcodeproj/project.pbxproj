@@ -11,6 +11,7 @@
 		CD0DE7721F8964A600E84C30 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DE7711F8964A600E84C30 /* Note.swift */; };
 		CD0DE7741F89658700E84C30 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DE7731F89658700E84C30 /* NoteDetailViewController.swift */; };
 		CD4B0E281F899EAF00E9404D /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B0E271F899B1200E9404D /* title.png */; };
+		CD4B0E2A1F89AA3000E9404D /* paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD4B0E291F89AA2D00E9404D /* paper.jpg */; };
 		CDAB6F1F1F85EB0600B3669F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB6F1E1F85EB0600B3669F /* AppDelegate.swift */; };
 		CDAB6F241F85EB0600B3669F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAB6F221F85EB0600B3669F /* Main.storyboard */; };
 		CDAB6F271F85EB0600B3669F /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDAB6F251F85EB0600B3669F /* Notes.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 		CD4B0E241F8996C200E9404D /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
 		CD4B0E251F8996C200E9404D /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87.png; sourceTree = "<group>"; };
 		CD4B0E271F899B1200E9404D /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		CD4B0E291F89AA2D00E9404D /* paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper.jpg; sourceTree = "<group>"; };
 		CDAB6F1B1F85EB0600B3669F /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAB6F1E1F85EB0600B3669F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAB6F231F85EB0600B3669F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		CD4B0E261F899B1200E9404D /* Other Pic */ = {
 			isa = PBXGroup;
 			children = (
+				CD4B0E291F89AA2D00E9404D /* paper.jpg */,
 				CD4B0E271F899B1200E9404D /* title.png */,
 			);
 			path = "Other Pic";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDAB6F2C1F85EB0600B3669F /* LaunchScreen.storyboard in Resources */,
+				CD4B0E2A1F89AA3000E9404D /* paper.jpg in Resources */,
 				CDAB6F291F85EB0600B3669F /* Assets.xcassets in Resources */,
 				CD4B0E281F899EAF00E9404D /* title.png in Resources */,
 				CDAB6F241F85EB0600B3669F /* Main.storyboard in Resources */,

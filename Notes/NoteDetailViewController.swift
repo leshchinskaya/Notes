@@ -14,7 +14,17 @@ class NoteDetailViewController: UIViewController {
     
     var note: Note!
     
-    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var contentTextView: UITextView!    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        /*
+        // Add a background view to the table view
+        let backgroundImage = UIImage(named: "paper.jpg")
+        let imageViewBackground = UIImageView(image: backgroundImage)
+        self.contentTextView.addSubview(imageViewBackground)
+         */
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {
