@@ -10,13 +10,12 @@ import UIKit
 
 class NoteDetailViewController: UIViewController {
     
-    
-    @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet weak var titleTextField: UITextField!
     
     var note: Note!
     
     @IBOutlet weak var contentTextView: UITextView!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
