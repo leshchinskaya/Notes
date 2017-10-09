@@ -7,6 +7,7 @@ target 'Notes' do
 
   pod ‘Firebase’
   pod ‘Firebase/Database’
+  pod ‘Firebase/Core’
   # Pods for Notes
 
 end

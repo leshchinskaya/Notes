@@ -146,7 +146,6 @@
 		CD0DE76E1F895E0E00E84C30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDAB6F1E1F85EB0600B3669F /* AppDelegate.swift */,
 				CDAB6F281F85EB0600B3669F /* Assets.xcassets */,
 				CDAB6F2A1F85EB0600B3669F /* LaunchScreen.storyboard */,
 				CDAB6F2D1F85EB0600B3669F /* Info.plist */,
@@ -234,6 +233,7 @@
 		CDAB6F1D1F85EB0600B3669F /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				CDAB6F1E1F85EB0600B3669F /* AppDelegate.swift */,
 				CD0DE7711F8964A600E84C30 /* Note.swift */,
 				CD0DE76F1F895EEF00E84C30 /* NotesTableViewController.swift */,
 				CD0DE7731F89658700E84C30 /* NoteDetailViewController.swift */,

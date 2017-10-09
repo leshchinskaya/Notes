@@ -26,7 +26,7 @@ class NotesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // FIRDatabase.database().reference().setValue(85)
+        //Database.database().reference().setValue(85)
         
         //navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
@@ -93,7 +93,6 @@ class NotesTableViewController: UITableViewController {
         } else {
             note = notes[indexPath.row]
         }
-        
         
         cell.textLabel!.text = notes[indexPath.row].title
         
