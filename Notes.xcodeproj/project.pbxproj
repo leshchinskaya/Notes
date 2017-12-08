@@ -12,6 +12,7 @@
 		CD0DE7701F895EEF00E84C30 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DE76F1F895EEF00E84C30 /* NotesTableViewController.swift */; };
 		CD0DE7721F8964A600E84C30 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DE7711F8964A600E84C30 /* Note.swift */; };
 		CD0DE7741F89658700E84C30 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DE7731F89658700E84C30 /* NoteDetailViewController.swift */; };
+		CD22F5881FDA9C1A00513DFD /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = CD22F5871FDA9BC700513DFD /* GoogleService-Info.plist */; };
 		CD4B0E281F899EAF00E9404D /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B0E271F899B1200E9404D /* title.png */; };
 		CD4B0E2A1F89AA3000E9404D /* paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD4B0E291F89AA2D00E9404D /* paper.jpg */; };
 		CD4B0E321F89B27B00E9404D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4B0E311F89B27B00E9404D /* IntentHandler.swift */; };
@@ -70,6 +71,7 @@
 		CD0DE76F1F895EEF00E84C30 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		CD0DE7711F8964A600E84C30 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		CD0DE7731F89658700E84C30 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		CD22F5871FDA9BC700513DFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD4B0E1E1F8996C200E9404D /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		CD4B0E1F1F8996C200E9404D /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		CD4B0E201F8996C200E9404D /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 		CD4B0E3D1F89B27B00E9404D /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		CD4B0E401F89B27B00E9404D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		CD4B0E421F89B27B00E9404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD4B0E601F89CB4600E9404D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDAB6F1B1F85EB0600B3669F /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAB6F1E1F85EB0600B3669F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAB6F231F85EB0600B3669F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -238,7 +239,7 @@
 				CD0DE76F1F895EEF00E84C30 /* NotesTableViewController.swift */,
 				CD0DE7731F89658700E84C30 /* NoteDetailViewController.swift */,
 				CDAB6F221F85EB0600B3669F /* Main.storyboard */,
-				CD4B0E601F89CB4600E9404D /* GoogleService-Info.plist */,
+				CD22F5871FDA9BC700513DFD /* GoogleService-Info.plist */,
 				CD4B0E261F899B1200E9404D /* Other Pic */,
 				CD4B0E1D1F8996C200E9404D /* Icon */,
 				CD0DE76E1F895E0E00E84C30 /* Supporting Files */,
@@ -517,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD22F5881FDA9C1A00513DFD /* GoogleService-Info.plist in Sources */,
 				CDAB6F271F85EB0600B3669F /* Notes.xcdatamodeld in Sources */,
 				CDAB6F1F1F85EB0600B3669F /* AppDelegate.swift in Sources */,
 				CD0DE7741F89658700E84C30 /* NoteDetailViewController.swift in Sources */,
